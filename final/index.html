@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        App de ventas
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar"></div>
+    <div id="app">
+        <div class="carrito">
+            <p>Carrito ({{ carrito.length }})</p>
+        </div>
+        <producto :premium="premium" @agregar-al-carrito="actualizarCarrito"></producto>
+        <producto :premium="premium" @agregar-al-carrito="actualizarCarrito"></producto>
+        <producto :premium="premium" @agregar-al-carrito="actualizarCarrito"></producto>
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

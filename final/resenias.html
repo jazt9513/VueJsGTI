@@ -1,0 +1,11 @@
+<div>
+    <h2>Reseñas</h2>
+    <p v-if="!resenias.length">No hay reseñas todavia.</p>
+    <ul>
+        <li v-for="resenia in resenias">
+            <p>{{ resenia.nombre }}</p>
+            <p>Calificación: {{ resenia.calificacion }}</p>
+            <p>{{ resenia.resenia }}</p>
+        </li>
+    </ul>
+</div>
